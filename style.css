@@ -1,4 +1,32 @@
+body
+{
+	font-family: "Open Sans", sans-serif;
+	background-color: #F6F9FB;
+}
+
+/* navbar settings */
+
+.navbar
+{
+	--bs-navbar-padding-x: 3rem;
+	--bs-navbar-brand-margin-end: 1.5rem;
+	--bs-navbar-brand-font-size: 0.8rem;
+}
+
 .logo
 {
 	width: 100px;
+}
+
+.nav-li
+{
+	font-weight: bold;
+}
+
+.btn
+{
+	--bs-btn-padding-x: 1rem;
+	--bs-btn-padding-y: 0;
+	--bs-btn-border-radius: 1rem;
+	--bs-btn-font-size: 0.7rem;
 }

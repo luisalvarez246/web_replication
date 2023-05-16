@@ -5,6 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">	
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 </head>
@@ -13,13 +16,21 @@
 		<a class="navbar-brand" href="#">
 			<img src="./images/logo.svg" alt="site_logo" class="logo"/>
 		</a>
-		<div class="nav justify-content-end">
-			<a class="navbar-brand" href="#">Description</a>
-			<a class="navbar-brand" href="#">Features</a>
-			<a class="navbar-brand" href="#">Screens</a>
-			<a class="navbar-brand" href="#">Extra</a>
-			<button>Download</button>
-		</div>
+		<ul class="nav justify-content-end text-uppercase nav-li">
+			<li class="nav-item">
+				<a class="navbar-brand" href="#">Description</a>
+			</li>
+			<li class="nav-item">
+				<a class="navbar-brand" href="#">Features</a>
+			</li>
+			<li class="nav-item">
+				<a class="navbar-brand" href="#">Screens</a>
+			</li>
+			<li class="nav-item">
+				<a class="navbar-brand dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Extra</a>
+			</li>
+			<button type="button" class="btn btn-outline-danger text-uppercase">Download</button>
+		</ul>
 	</nav>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
