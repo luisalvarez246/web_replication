@@ -15,7 +15,8 @@ body
 
 .logo
 {
-	width: 100px;
+	width: 10em;
+	height: auto;
 }
 
 .nav-li
@@ -29,4 +30,29 @@ body
 	--bs-btn-padding-y: 0;
 	--bs-btn-border-radius: 1rem;
 	--bs-btn-font-size: 0.7rem;
+}
+
+/* small devices ruleset */
+
+@media screen and (max-width: 694px)
+{
+	body
+	{
+		--bs-body-line-height: 5.5px;
+	}
+
+	.navbar 
+	{
+		--bs-navbar-padding-x: 1rem;
+		--bs-navbar-brand-margin-end: 0.5rem;
+		--bs-navbar-brand-font-size: 0.4rem;
+	}
+
+	.btn
+	{
+		--bs-btn-padding-x: 0.5rem;
+		--bs-btn-padding-y: 0;
+		--bs-btn-border-radius: 1rem;
+		--bs-btn-font-size: 0.4rem;
+	}
 }
