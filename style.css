@@ -32,9 +32,34 @@ body
 	--bs-btn-font-size: 0.7rem;
 }
 
+/* tablet ruleset */
+
+@media screen and (max-width: 768px)
+{
+	body
+	{
+		--bs-body-line-height: 13.5px;
+	}
+
+	.navbar 
+	{
+		--bs-navbar-padding-x: 2rem;
+		--bs-navbar-brand-margin-end: 0.5rem;
+		--bs-navbar-brand-font-size: 0.7rem;
+	}
+
+	.btn
+	{
+		--bs-btn-padding-x: 0.5rem;
+		--bs-btn-padding-y: 0;
+		--bs-btn-border-radius: 1rem;
+		--bs-btn-font-size: 0.6rem;
+	}
+}
+
 /* small devices ruleset */
 
-@media screen and (max-width: 694px)
+@media screen and (max-width: 570px)
 {
 	body
 	{
@@ -54,5 +79,23 @@ body
 		--bs-btn-padding-y: 0;
 		--bs-btn-border-radius: 1rem;
 		--bs-btn-font-size: 0.4rem;
+	}
+
+	section
+	{
+		width: 100%;
+		height: 400px;
+	}
+
+	footer
+	{
+		font-size: 0.5rem;
+		color: #999999;
+		padding: 2rem;
+	}
+
+	.footer-title
+	{
+		font-size: 0.6rem;
 	}
 }
