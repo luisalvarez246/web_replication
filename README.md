@@ -4,3 +4,4 @@ This page was made using bootstrap5, in order to view its content execute the fo
 
 	- npm init
 	- npm i bootstrap
+	- npm i bootstrap-icons

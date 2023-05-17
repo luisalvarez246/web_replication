@@ -89,7 +89,9 @@ body
 
 	footer
 	{
-		font-size: 0.5rem;
+		font-size: 0.4rem;
+		font-style: normal;
+		font-weight: lighter;
 		color: #999999;
 		padding: 2rem;
 	}
@@ -97,5 +99,12 @@ body
 	.footer-title
 	{
 		font-size: 0.6rem;
+		font-weight: 600;
+	}
+
+	footer p
+	{
+		margin-bottom: 0.4rem;
+		font-weight: lighter;
 	}
 }
