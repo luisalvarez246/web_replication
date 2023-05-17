@@ -84,7 +84,7 @@ body
 	section
 	{
 		width: 100%;
-		height: 400px;
+		height: auto;
 	}
 
 	footer
@@ -106,5 +106,11 @@ body
 	{
 		margin-bottom: 0.4rem;
 		font-weight: lighter;
+	}
+
+	.copyright
+	{
+		display: flex;
+		margin-top: 1rem;
 	}
 }
