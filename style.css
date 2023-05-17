@@ -81,6 +81,41 @@ body
 		--bs-btn-font-size: 0.4rem;
 	}
 
+	main
+	{
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		font-size: small;
+		margin-top: 1rem;
+	}
+
+	main h1
+	{
+		font-weight: 600;
+		font-size: calc(1.3rem + 0.5vw);
+	}
+
+	.lp-description
+	{
+		padding: 0em 3.8em;
+	}
+
+	main p
+	{
+		font-size: 0.5em;
+		text-align: center;
+		line-height: 12px;
+	}
+
+	.store-btn
+	{
+		--bs-btn-padding-x: 0.7rem;
+		--bs-btn-padding-y: 0.2rem;
+		--bs-btn-border-radius: 1rem;
+		--bs-btn-font-size: 0.4rem;
+	}
+
 	section
 	{
 		width: 100%;
