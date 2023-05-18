@@ -12,6 +12,7 @@ body
 	--bs-navbar-padding-x: 3rem;
 	--bs-navbar-brand-margin-end: 1.5rem;
 	--bs-navbar-brand-font-size: 0.8rem;
+	background-color: #F7FAFD;
 }
 
 .logo
@@ -169,6 +170,27 @@ figure
 .rocket path
 {
 	fill: #50B9E8;
+}
+
+/* icons_stats*/
+
+#stats
+{
+	background-color: #E8EFF6;
+	height: 12rem;
+	align-content: center;
+}
+
+.download-iphone
+{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#download-iphone
+{
+	padding-top: 0;
+	padding-bottom: 3rem;
 }
 
 /*footer ruleset*/
