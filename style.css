@@ -33,6 +33,7 @@ body
 	--bs-btn-border-radius: 1rem;
 	--bs-btn-font-size: 0.7rem;
 	font-weight: 600;
+	border-color: #FF556F;
 }
 
 /* main ruleset */
@@ -69,6 +70,7 @@ main p
     --bs-btn-padding-y: 0.5rem;
     --bs-btn-border-radius: 2rem;
     --bs-btn-font-size: 1rem;
+	background-color: #FF556F;
 }
 
 .bi-apple
@@ -222,6 +224,48 @@ footer p
 	margin-top: 1rem;
 }
 
+/* description*/
+
+.description-one
+{
+	display: flex;
+	padding: 9rem 0;
+}
+
+.img-description
+{
+	width: 50%;
+}
+
+.description-one-text
+{
+	padding: 0 1rem;
+}
+
+.description-one-text h2
+{
+	font-weight: 600;
+}
+
+.description-one-text ul 
+{
+	padding-left: 16px;
+}
+
+#lightbox
+{
+	background-color: #FF556F;
+	border-color: #FF556F;
+	--bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-border-radius: 2rem;
+    --bs-btn-font-size: 1rem;
+}
+
+#description-two
+{
+	background-color: #E8EFF6;
+}
 /* tablet ruleset */
 
 @media screen and (max-width: 768px)
@@ -269,6 +313,12 @@ footer p
 	{
 		width: 25px;
 		height: 25px;
+	}
+
+	/*description*/
+	.description-one-text ul, p
+	{
+		line-height: 1.5rem;
 	}
 }
 
@@ -382,4 +432,45 @@ footer p
 		display: flex;
 		margin-top: 1rem;
 	}
+
+	/*description*/
+
+	.description-one
+	{
+		padding: 3rem 0;
+	}
+
+	.img-description
+	{
+		height: 70%;
+	}
+	.description-one-text h2
+	{
+		font-size: 1rem;
+	}
+
+	.description-one-text p
+	{
+		margin-bottom: 0;
+	}
+
+	.description-one-text ul
+	{
+		padding-left: 8px;
+	}
+
+	.description-one-text ul, p
+	{
+		font-size: 0.4rem;
+		line-height: 1rem;
+	}
+
+	#lightbox
+	{
+		--bs-btn-padding-x: 0.7rem;
+	    --bs-btn-padding-y: 0.2rem;
+	    --bs-btn-border-radius: 2rem;
+	    --bs-btn-font-size: 0.4rem;
+	}
+
 }
