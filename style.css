@@ -223,6 +223,31 @@ footer p
 		--bs-btn-border-radius: 1rem;
 		--bs-btn-font-size: 0.6rem;
 	}
+
+	main h1
+	{
+		font-size: 2.5rem;
+	}
+
+	.store-btn
+	{
+		--bs-btn-padding-x: 1rem;
+	    --bs-btn-padding-y: 0.4rem;
+	    --bs-btn-border-radius: 2rem;
+	    --bs-btn-font-size: 1rem;
+	}
+
+	.bi-apple
+	{
+		width: 18px;
+		height: 18px;
+	}
+
+	.bi-play-fill
+	{
+		width: 25px;
+		height: 25px;
+	}
 }
 
 /* small devices ruleset */
@@ -272,6 +297,12 @@ footer p
 		--bs-btn-padding-y: 0.2rem;
 		--bs-btn-border-radius: 1rem;
 		--bs-btn-font-size: 0.4rem;
+	}
+
+	.bi-apple
+	{
+		width: 6px;
+		height: 6px;
 	}
 
 	.bi-play-fill
