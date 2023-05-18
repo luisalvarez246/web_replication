@@ -2,6 +2,7 @@ body
 {
 	font-family: "Open Sans", sans-serif;
 	background-color: #F6F9FB;
+	min-height: 100%;
 }
 
 /* navbar settings */
@@ -21,7 +22,7 @@ body
 
 .nav-li
 {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .btn
@@ -30,6 +31,173 @@ body
 	--bs-btn-padding-y: 0;
 	--bs-btn-border-radius: 1rem;
 	--bs-btn-font-size: 0.7rem;
+	font-weight: 600;
+}
+
+/* main ruleset */
+main
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size: small;
+	padding-top: 2rem;
+}
+
+main h1
+{
+	font-weight: 600;
+	font-size: 3.5rem;
+}
+
+main p
+{
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 2rem;
+}
+
+.lp-description
+{
+	padding: 0em 1.8em;
+}
+
+.store-btn
+{
+	--bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-border-radius: 2rem;
+    --bs-btn-font-size: 1rem;
+}
+
+.bi-apple
+{
+	width: 18px;
+	height: 18px;
+}
+
+.bi-play-fill
+{
+	width: 25px;
+	height: 25px;
+}
+
+/*figure ruleset*/
+
+figure
+{
+	padding: 4em;	
+}
+
+.circle
+{
+	display: flex;
+	align-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+}
+
+.specs
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.specs-b
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.icons
+{
+	width: 4rem;
+	height: 4rem;
+}
+
+.goals
+{
+	background-color: #EBE8FB;
+}
+
+.goals path
+{
+	fill: #AB7EEC;
+}
+
+.analysis
+{
+	background-color: #DAF4EF;
+}
+
+.analysis path
+{
+	fill:#1ACA94;
+}
+
+.settings
+{
+	background-color: #F8E5EA;
+}
+
+.settings path
+{
+	fill: #FF556F;
+}
+
+.social
+{
+	background-color: #F8F1DE;
+}
+
+.social path
+{
+	fill: #FFB30F;
+}
+
+.rocket
+{
+	background-color: #E2F2FA;
+}
+
+.rocket path
+{
+	fill: #50B9E8;
+}
+
+/*footer ruleset*/
+
+footer
+{
+	font-size: 0.8rem;
+	font-style: normal;
+	font-weight: lighter;
+	color: #999999;
+	padding: 2rem;
+}
+
+.footer-title
+{
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+footer p
+{
+	margin-bottom: 0.4rem;
+	font-weight: lighter;
+}
+
+.copyright
+{
+	display: flex;
+	margin-top: 1rem;
 }
 
 /* tablet ruleset */
@@ -81,13 +249,9 @@ body
 		--bs-btn-font-size: 0.4rem;
 	}
 
-	main
+	.lp-description
 	{
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		font-size: small;
-		padding-top: 2rem;
+		padding: 0em 3.8em;
 	}
 
 	main h1
@@ -96,15 +260,9 @@ body
 		font-size: calc(1.3rem + 0.5vw);
 	}
 
-	.lp-description
-	{
-		padding: 0em 3.8em;
-	}
-
 	main p
 	{
 		font-size: 0.5em;
-		text-align: center;
 		line-height: 12px;
 	}
 
@@ -116,92 +274,33 @@ body
 		--bs-btn-font-size: 0.4rem;
 	}
 
+	.bi-play-fill
+	{
+		width: 10px;
+		height: 10px;
+	}
+
 	section
 	{
 		width: 100%;
 		height: auto;
 	}
 
-	figure
-	{
-		padding: 2rem;
-	}
-
-	.specs
-	{
-		display: flex;
-    	flex-wrap: wrap;
-		justify-content: space-evenly;
-	}
-
-	.specs-b
-	{
-		display: flex;
-    	flex-wrap: wrap;
-		justify-content: center;
-		padding: 2rem;
-	}
-
 	.circle
 	{
 		display: flex;
 		align-content: space-around;
-    	flex-wrap: wrap;
-    	justify-content: center;
+		flex-wrap: wrap;
+		justify-content: center;
 		width: 4rem;
 		height: 4rem;
 		border-radius: 50%;
-		background-color: blue;
 	}
 
-	.goals
+	.icons
 	{
-		background-color: #EBE8FB;
-	}
-
-	.goals path
-	{
-		fill: #AB7EEC;
-	}
-
-	.analysis
-	{
-		background-color: #DAF4EF;
-	}
-
-	.analysis path
-	{
-		fill:#1ACA94;
-	}
-
-	.settings
-	{
-		background-color: #F8E5EA;
-	}
-
-	.settings path
-	{
-		fill: #FF556F;
-	}
-
-	.social
-	{
-		background-color: #F8F1DE;
-	}
-
-	.social path
-	{
-		fill: #FFB30F;
-	}
-
-	.rocket
-	{
-		background-color: #E2F2FA;
-	}
-
-	.rocket path
-	{
-		fill: #50B9E8;
+		width: 2rem;
+		height: 2rem;
 	}
 
 	footer
