@@ -87,7 +87,7 @@ body
 		justify-content: center;
 		flex-wrap: wrap;
 		font-size: small;
-		margin-top: 1rem;
+		padding-top: 2rem;
 	}
 
 	main h1
@@ -125,6 +125,83 @@ body
 	figure
 	{
 		padding: 2rem;
+	}
+
+	.specs
+	{
+		display: flex;
+    	flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.specs-b
+	{
+		display: flex;
+    	flex-wrap: wrap;
+		justify-content: center;
+		padding: 2rem;
+	}
+
+	.circle
+	{
+		display: flex;
+		align-content: space-around;
+    	flex-wrap: wrap;
+    	justify-content: center;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		background-color: blue;
+	}
+
+	.goals
+	{
+		background-color: #EBE8FB;
+	}
+
+	.goals path
+	{
+		fill: #AB7EEC;
+	}
+
+	.analysis
+	{
+		background-color: #DAF4EF;
+	}
+
+	.analysis path
+	{
+		fill:#1ACA94;
+	}
+
+	.settings
+	{
+		background-color: #F8E5EA;
+	}
+
+	.settings path
+	{
+		fill: #FF556F;
+	}
+
+	.social
+	{
+		background-color: #F8F1DE;
+	}
+
+	.social path
+	{
+		fill: #FFB30F;
+	}
+
+	.rocket
+	{
+		background-color: #E2F2FA;
+	}
+
+	.rocket path
+	{
+		fill: #50B9E8;
 	}
 
 	footer
