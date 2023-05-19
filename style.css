@@ -281,6 +281,63 @@ footer p
 	color: white;
 }
 
+/* features */
+
+.features-h
+{
+	display: flex;
+	justify-content: center;
+}
+
+.features-h h2
+{
+	font-weight: 600;
+}
+
+#review
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+    align-items: center;
+}
+
+#review-text
+{
+	text-align: center;
+}
+
+#review-name
+{
+	text-align: center;
+	font-weight: 600;
+}
+
+#review-hr
+{
+	border-top: 3px solid #bbb;
+	width: 10%;
+}
+
+.customer-logo
+{
+	display: flex;
+	justify-content: center;
+	width: 20%;
+	margin: 0 1em;
+	padding: 0 2em;
+}
+
+#customer-logo
+{
+	display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    margin: 2em 4em;
+    height: 13em;
+    align-content: space-around;
+}
+
 /* tablet ruleset */
 
 @media screen and (max-width: 768px)
