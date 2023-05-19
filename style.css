@@ -266,6 +266,21 @@ footer p
 {
 	background-color: #E8EFF6;
 }
+
+.button-description-two
+{
+	border: none;
+	color: #7D7D7D;
+	background-color: #ffffff;
+	padding: 14px 28px;
+}
+
+.button-description-two:hover
+{
+	background-color: #9B68E7;
+	color: white;
+}
+
 /* tablet ruleset */
 
 @media screen and (max-width: 768px)
