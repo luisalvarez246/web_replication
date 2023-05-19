@@ -26,6 +26,14 @@ body
 	font-weight: 600;
 }
 
+#hr-nav
+{
+	border-top: 1px solid #bbb;
+	width: 100%;
+	margin-top: 1rem;
+    margin-bottom: 0;
+}
+
 .btn
 {
 	--bs-btn-padding-x: 1rem;
@@ -89,7 +97,8 @@ main p
 
 figure
 {
-	padding: 4em;	
+	padding: 2em 4em;
+	height: 58vw;	
 }
 
 .circle
@@ -103,6 +112,11 @@ figure
 	border-radius: 50%;
 }
 
+.circle:hover
+{
+	animation: tilt-shaking 0.25s infinite;
+}
+
 .specs
 {
 	display: flex;
@@ -110,12 +124,38 @@ figure
 	justify-content: space-evenly;
 }
 
+.icon-div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.animate-whole:hover
+{
+	animation: tilt-shaking 0.25s infinite;
+}
+
+.icon-div p
+{
+	margin-top: 1rem;
+	font-weight: 600;
+}
+
 .specs-b
 {
 	display: flex;
+	flex-direction: column;
+	align-content: center;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 2rem;
+}
+
+.specs-b p
+{
+	margin-top: 1rem;
+	font-weight: 600;
 }
 
 .icons
@@ -179,8 +219,59 @@ figure
 #stats
 {
 	background-color: #E8EFF6;
-	height: 12rem;
+	height: 20rem;
 	align-content: center;
+}
+
+#stats h2
+{
+	font-weight: 800;
+}
+
+#stats p
+{
+	font-size: 0.5rem;
+	font-weight: 200;
+	margin: 0;
+}
+
+#goals path
+{
+	fill: #AB7EEC;
+}
+
+#goals path:hover 
+{
+	animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking 
+{
+	0% { transform: rotate(0deg); }
+	25% { transform: rotate(5deg); }
+	50% { transform: rotate(0eg); }
+	75% { transform: rotate(-5deg); }
+	100% { transform: rotate(0deg); }
+}
+
+#analysis path
+{
+	fill:#1ACA94;
+}
+
+#settings path
+{
+	fill: #FF556F;
+}
+
+#social path
+{
+	fill: #FFB30F;
+}
+
+#rocket path
+{
+	fill: #50B9E8;
 }
 
 .download-iphone
@@ -224,6 +315,18 @@ footer p
 	margin-top: 1rem;
 }
 
+#social-icon .bi
+{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+#contact-info .bi
+{
+	width: 1rem;
+	height: 1rem;
+}
+
 /* description*/
 
 .description-one
@@ -262,6 +365,29 @@ footer p
     --bs-btn-font-size: 1rem;
 }
 
+#lightbox:hover
+{
+	background-color: #bb2d3b;
+}
+
+#terms
+{
+	background-color: transparent;
+	border-color: black;
+	color: black;
+	--bs-btn-padding-x: 2rem;
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-border-radius: 2rem;
+    --bs-btn-font-size: 1rem;
+}
+
+#terms:hover
+{
+	background-color: #FF556F;
+	border-color: transparent;
+	color: #ffffff;
+}
+
 #description-two
 {
 	background-color: #E8EFF6;
@@ -270,9 +396,17 @@ footer p
 .button-description-two
 {
 	border: none;
-	color: #7D7D7D;
-	background-color: #ffffff;
-	padding: 14px 28px;
+    color: #7D7D7D;
+    background-color: #ffffff;
+	padding: 6px 9px;
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    width: 36%;
+}
+
+.button-description-two svg
+{
+	width: 0.5rem;
 }
 
 .button-description-two:hover
@@ -326,6 +460,7 @@ footer p
 	width: 20%;
 	margin: 0 1em;
 	padding: 0 2em;
+	height: auto;
 }
 
 #customer-logo
@@ -336,6 +471,59 @@ footer p
     margin: 2em 4em;
     height: 13em;
     align-content: space-around;
+}
+
+/* phone animation*/
+
+.trick
+{
+	position: relative;
+}
+
+#iphone_1
+{
+	position: absolute;
+}
+
+#iphone_2
+{
+	position: absolute;
+}
+
+#trick img {
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+  }
+
+@keyframes iphoneFadeInOut 
+{
+	0% 
+	{
+		opacity:1;
+  	}
+  	45% 
+  	{
+  		opacity:1;
+  	}
+  	55% 
+  	{
+  		opacity:0;
+  	}
+  	100% 
+  	{
+  		opacity:0;
+  	}
+  }
+
+#trick img.top
+{
+	animation-name: iphoneFadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
 }
 
 /* tablet ruleset */
@@ -537,7 +725,23 @@ footer p
 		line-height: 1rem;
 	}
 
+	.button-description-two
+	{
+		padding: 6px 9px;
+	    margin-bottom: 0.4rem;
+	    font-size: 0.4rem;
+	    width: 36%;
+	}
+
 	#lightbox
+	{
+		--bs-btn-padding-x: 0.7rem;
+	    --bs-btn-padding-y: 0.2rem;
+	    --bs-btn-border-radius: 2rem;
+	    --bs-btn-font-size: 0.4rem;
+	}
+
+	#terms
 	{
 		--bs-btn-padding-x: 0.7rem;
 	    --bs-btn-padding-y: 0.2rem;
@@ -560,5 +764,17 @@ footer p
 	{
 		width: 1rem;
 		height: 1rem;
+	}
+
+	#social-icon .bi
+	{
+		width: 0.8rem;
+		height: 0.8rem;
+	}
+
+	#contact-info .bi
+	{
+		width: 0.5rem;
+		height: 0.5rem;
 	}
 }
